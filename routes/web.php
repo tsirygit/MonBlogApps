@@ -5,19 +5,13 @@ use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
-
-
-// Route::get('dashboard', function () {
-//     return Inertia::render('Dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('homepage', [HomepageController::class, 'index'])->name('homepage')->middleware('auth');
 
 route::resource('post', PostController::class)->middleware('auth');
 
 Route::get('/comments/create/{post}', [CommentController::class, 'create'])->name('comment.create');
-Route::post('/comments/create/', [CommentController::class, 'store'])->name('comment.store');
+Route::post('/comments', [CommentController::class, 'store'])->name('comment.store');
 Route::get('/comments/edit/{comment}', [CommentController::class, 'edit'])->name('comment.edit');
 Route::patch('/comments/{comment}', [CommentController::class, 'update'])->name('comment.update');
 Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comment.destroy');
