@@ -6,7 +6,9 @@ use App\Models\Comment;
 use App\Events\CommentEvent;
 use Illuminate\Support\Facades\Event;
 
-it('seul les utilisateur connecté est connecté les post', function () {
+uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
+
+it('seul les utilisateur connecté est commenté les post', function () {
 
     // lance un evenement faker pour ecouter le evenement
     Event::fake();
