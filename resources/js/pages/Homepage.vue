@@ -1,4 +1,6 @@
 <template>
+    <Head title="Page d'accueil" />
+    
     <NavbarLayout />
 
     <div class="lg:mt-15 mt-10 text-center">
@@ -138,8 +140,9 @@
 import FlashMessage from '@/components/FlashMessage.vue';
 import Notification from '@/components/Notification.vue'; // Composant de notification toast
 import NavbarLayout from '@/layouts/NavbarLayout.vue';
-import { Link, useForm, usePage } from '@inertiajs/vue3';
+import { Head, Link, useForm, usePage } from '@inertiajs/vue3';
 import { onMounted, reactive, ref } from 'vue';
+import route from 'ziggy-js';
 
 /**
  * Récupération des données utilisateur depuis les props globales Inertia

@@ -65,6 +65,7 @@ import Input from '@/composables/UI/Input.vue'; // Champ de formulaire réutilis
 import NavbarLayout from '@/layouts/NavbarLayout.vue'; // Barre de navigation
 import { Head, Link, useForm } from '@inertiajs/vue3'; // Outils Inertia
 import { ref } from 'vue';
+import route from 'ziggy-js';
 
 /**
  * Définition des champs du formulaire

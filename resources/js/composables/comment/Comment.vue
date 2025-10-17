@@ -45,14 +45,14 @@
 
 <script setup>
 /**
- * Composant : DeleteComment.vue
+ * Composant : Comment.vue
  *
  * Permet de supprimer un commentaire spécifique lié à un post.
  * Utilise Inertia.js pour envoyer une requête DELETE à la route 'comment.destroy'.
  */
 
 import { Link, useForm } from '@inertiajs/vue3'; // Outils Inertia pour navigation et formulaire
-
+import route from 'ziggy-js';
 /**
  * Props reçues du parent
  *

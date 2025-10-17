@@ -64,6 +64,7 @@ import InputFile from '@/composables/UI/InputFile.vue'; // Champ d'upload de fic
 import NavbarLayout from '@/layouts/NavbarLayout.vue'; // Barre de navigation
 import { Head, Link, useForm } from '@inertiajs/vue3'; // Outils Inertia pour navigation et formulaire
 import { ref } from 'vue';
+import route from 'ziggy-js';
 
 /**
  * Définition des champs du formulaire

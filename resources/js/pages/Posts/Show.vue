@@ -1,4 +1,5 @@
 <template>
+     <Head title="information sur le post" />
     <NavbarLayout />
     <div class="flex justify-center">
         <div class="mt-5 px-20 lg:mt-10">
@@ -107,8 +108,9 @@ import FlashMessage from '@/components/FlashMessage.vue'; // Composant pour affi
 import Comment from '@/composables/comment/Comment.vue'; // Composant pour afficher les commentaires
 import NavbarLayout from '@/layouts/NavbarLayout.vue'; // Barre de navigation
 
-import { Link, useForm } from '@inertiajs/vue3'; // Outils Inertia pour navigation et formulaire
+import { Link, useForm, Head } from '@inertiajs/vue3'; // Outils Inertia pour navigation et formulaire
 import { onMounted, reactive } from 'vue';
+import route from 'ziggy-js';
 
 /**
  * Props reçues du backend via Inertia

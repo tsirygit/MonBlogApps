@@ -56,6 +56,7 @@
 import Input from '@/composables/UI/Input.vue'; // Champ de formulaire réutilisable
 import { Link, useForm } from '@inertiajs/vue3'; // Outils Inertia
 import { ref } from 'vue';
+import route from 'ziggy-js';
 
 /**
  * Définition du champ requis pour confirmer la suppression
