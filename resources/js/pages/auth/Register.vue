@@ -4,7 +4,7 @@
         <div class="w-full max-w-sm rounded-lg bg-slate-900 p-8 shadow-lg">
             <h1 class="mb-2 text-center text-xl font-bold text-white md:text-2xl">creer de nouveau compte</h1>
             <div class="mt-8 justify-items-center">
-                <form @submit.prevent="login" class="w-full">
+                <form @submit.prevent="register" class="w-full">
                     <div v-for="(item, index) in inputs" :key="index.id">
                         <Input
                             v-model="form[item.id]"
@@ -126,7 +126,7 @@ const form = useForm({
  * Envoie une requête POST à la route 'register'
  * Réinitialise le formulaire en cas de succès
  */
-const login = () => {
+const register = () => {
     form.post(route('register'), {
         preserveScroll: true,
         onSuccess: () => {
