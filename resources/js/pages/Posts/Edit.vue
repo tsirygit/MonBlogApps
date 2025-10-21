@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="mx-6 mt-4 text-center text-sm lg:text-xl">
-                        <Link :href="route('homepage')" class="text-white hover:underline">annuler la modification?</Link>
+                        <Link :href="route('homepage')" class="text-white hover:underline">annuler la modification du post</Link>
                     </div>
                 </form>
             </div>

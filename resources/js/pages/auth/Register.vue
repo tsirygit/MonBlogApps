@@ -61,6 +61,8 @@
 import Input from '@/composables/UI/Input.vue'; // Champ de formulaire réutilisable
 import { Head, Link, useForm } from '@inertiajs/vue3'; // Outils Inertia pour navigation et formulaire
 import { ref } from 'vue';
+import route from 'ziggy-js';
+
 
 /**
  * Définition des champs du formulaire

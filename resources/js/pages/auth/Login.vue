@@ -65,6 +65,7 @@ import Input from '@/composables/UI/Input.vue'; // Champ de formulaire réutilis
 import ForgotPasswordLink from '@/composables/password/ForgotPasswordLink.vue'; // Lien vers la réinitialisation du mot de passe
 import { Head, Link, useForm } from '@inertiajs/vue3'; // Outils Inertia pour navigation et formulaire
 import { ref } from 'vue';
+import route from 'ziggy-js';
 
 /**
  * Définition des champs du formulaire
